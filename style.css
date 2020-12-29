@@ -1,8 +1,16 @@
-body .one p {
-  width: 80%;
+/* SCSS HSL */
+/* SCSS Gradient */
+.navbar-custom {
+  background-color: #67140e;
 }
 
-body .one img {
-  width: 80%;
+.navbar-custom a {
+  color: white;
+}
+
+.cta {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */
