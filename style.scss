@@ -1,8 +1,8 @@
 /* SCSS HSL */
 $dark-sienna: hsla(355, 48%, 16%, 1);
 $blood-red: hsla(4, 76%, 23%, 1);
-$rust: hsla(24, 100%, 32%, 1);
-$bronze: hsla(31, 65%, 52%, 1);
+$rust: rgb(134, 172, 175);
+$bronze: rgb(152, 193, 199);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(
@@ -64,53 +64,91 @@ $gradient-bottom-left: linear-gradient(
 $gradient-radial: radial-gradient(#3c1518ff, #69140eff, #a44200ff, #d58936ff);
 
 body {
-  margin: 0;
-  padding: 0;
+  height: 100vh;
+  width: 100%;
 
-  header {
-    .navbar-custom {
-      background-color: #3c1518ff !important;
-        .navbar-brand {
+  .wrapper {
+    overflow: hidden;
 
-          color: white !important;
-        }
-        a  {
-
-           color: white !important;
-
-        }
-         span  {
-
-          color: white !important;
-
-        }
-      
-
-      
-    }
-
-   
-  }
-
-  main {
     margin: 0;
     padding: 0;
 
-     .cta {
+    header {
+      .cta {
+        text-align: center;
+        background-color: rgb(59, 56, 49);
+        color: rgba(185, 178, 157, 0.986);
+        .btn-outline-dark {
+          
+          background-color: none;
+           color: rgba(185, 178, 157, 0.986);
+
+          border: 1px solid rgba(185, 178, 157, 0.986);
+          
+          
+        }
+        .btn-outline-dark:hover {
+          background-color: rgb(131, 100, 7);
+          color: rgb(233, 231, 227);
+          
+        }
+       
+      }
+
+      .navbar-custom {
+        background-color: #3c1518ff !important;
+        .navbar-brand {
+          color: white !important;
+        }
+        a {
+          color: white !important;
+        }
+        a:active {
+          color: yellow !important;
+        }
+        span {
+          color: white !important;
+        }
+      }
+    }
+
+    main {
       background-color: aliceblue;
-    }
 
-    .first-section {
-      margin: 0;
-      padding: 0;
-      background-color: rgb(243, 196, 109);
-    }
+      .first-section {
+        background-color: rgb(119, 149, 74);
+        color: rgb(233, 241, 236);
+        font-size: 1.1rem;
+      }
 
-    .second-section {
-      margin: 0;
-      padding: 0;
-      background-color: rgb(243, 196, 109);
+      .second-section {
+        background-color: rgb(85, 57, 5);
+        color: rgb(200, 228, 236);
+        font-size: 1.1rem;
+      }
+
+      form {
+        background-color: rgb(209, 208, 140);
+        color: rgb(200, 228, 236);
+        padding: 3rem;
+        margin-top: 2rem;
+
+        .form-label {
+          color: $dark-sienna;
+        }
+
+        button:hover {
+          background-color: $dark-sienna;
+
+        }
+      }
+    }
+    footer {
+      background-color: $dark-sienna;
+      color: white;
+     
+      text-align: center;
+  
     }
   }
-
 }

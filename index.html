@@ -4,8 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <link rel="stylesheet" href="./style.css" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -13,164 +12,166 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-      <div class="cta">
-        <div class="row">
-          <div class="container d-block mx-auto w-75">
-            <h1>Hello, world!</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-              voluptatibus deleniti. Magni, vero laudantium. Quibusdam natus
-              nesciunt commodi consectetur. Iste qui aliquam illo est quasi
-              laborum ratione minus veritatis velit!
-            </p>
-            <button type="button" class="btn btn-primary mx-auto">
-              Sign up!
-            </button>
+    <div class="wrapper">
+      <header class="">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light navbar-custom position-fixed w-100 ps-4 pe-4"
+        >
+          <div
+            class="container-fluid d-flex flex-row justify-content-between p-0"
+          >
+            <div class="">
+              <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+            <div class="menu">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" active
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="cta p-0 pb-5 pt-5">
+          <div class="row">
+            <div class="container d-block mx-auto mt-5 w-50 lead">
+              <h1 class="d-block mx-auto">Hello, world!</h1>
+              <p class="m-0 p-0 d-block mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                voluptatibus deleniti. Magni, vero laudantium. Quibusdam natus
+                nesciunt commodi consectetur. Iste qui aliquam illo est quasi
+                laborum ratione minus veritatis velit!
+              </p>
+              <button type="button" class="btn btn-outline-dark btn-lg pt-1 pb-2 mt-3 w-50">Sign up</button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="container">
-      <section class="first-section row mt-5 pt-5 mb-5 pb-5 one">
-        <div class="col-md">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
-            repudiandae sint vero culpa necessitatibus dolores blanditiis! Ullam
-            rerum atque quaerat rem. Quos, assumenda sapiente. Dolore facere sed
-            amet unde dolores sapiente aliquid doloribus incidunt totam
-            voluptatibus veritatis, quidem ea veniam nostrum explicabo corrupti
-            in voluptatem laborum, ipsum natus qui error? Suscipit. Ut aliquam
-            repudiandae minus officiis explicabo doloribus eum. Aliquid, totam
-            ab. Fugiat officia, ab quaerat labore vero illum numquam error
-            minima, sapiente ullam molestias quibusdam aliquid nisi. Aut, atque
-            sapiente.
-          </p>
-        </div>
+      <main class="container-fluid">
+        <section class="first-section row pt-5 pb-5">
+          <div class="col-md">
+            <p class="pe-2 ps-2 w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
+              repudiandae sint vero culpa necessitatibus dolores blanditiis!
+              Ullam rerum atque quaerat rem. Quos, assumenda sapiente. Dolore
+              facere sed amet unde dolores sapiente aliquid doloribus incidunt
+              totam voluptatibus veritatis, quidem ea veniam nostrum explicabo
+              corrupti in voluptatem laborum, ipsum natus qui error? Suscipit.
+              Ut aliquam repudiandae minus officiis explicabo doloribus eum.
+              Aliquid, totam ab. Fugiat officia, ab quaerat labore vero illum
+              numquam error minima, sapiente ullam molestias quibusdam aliquid
+              nisi. Aut, atque sapiente.
+            </p>
+          </div>
 
-        <div class="col-md">
-          <img
-            class="rounded img-fluid"
-            src="https://picsum.photos/600/400"
-            alt=""
-          />
-        </div>
-      </section>
-
-      <section class=" second-section row mt-5 pt-5 mb-5 pb-5 one">
-        <div class="col-md">
-          <img
-            class="rounded img-fluid"
-            src="https://picsum.photos/600/400"
-            alt=""
-          />
-        </div>
-        <div class="col-md">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
-            repudiandae sint vero culpa necessitatibus dolores blanditiis! Ullam
-            rerum atque quaerat rem. Quos, assumenda sapiente. Dolore facere sed
-            amet unde dolores sapiente aliquid doloribus incidunt totam
-            voluptatibus veritatis, quidem ea veniam nostrum explicabo corrupti
-            in voluptatem laborum, ipsum natus qui error? Suscipit. Ut aliquam
-            repudiandae minus officiis explicabo doloribus eum. Aliquid, totam
-            ab. Fugiat officia, ab quaerat labore vero illum numquam error
-            minima, sapiente ullam molestias quibusdam aliquid nisi. Aut, atque
-            sapiente.
-          </p>
-        </div>
-      </section>
-      <section class="row">
-        <div class="mb-3">
-          <form action="">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
+          <div class="col-md">
+            <img
+              class="rounded img-fluid"
+              src="./images/one.png"
+              alt=""
             />
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Message: </label
+          </div>
+        </section>
+
+        <section class="second-section row pt-5 pb-5">
+          <div class="col-md">
+            <img
+              class="rounded img-fluid"
+              src="./images/two.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md">
+            <p class="pe-2 ps-2 w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
+              repudiandae sint vero culpa necessitatibus dolores blanditiis!
+              Ullam rerum atque quaerat rem. Quos, assumenda sapiente. Dolore
+              facere sed amet unde dolores sapiente aliquid doloribus incidunt
+              totam voluptatibus veritatis, quidem ea veniam nostrum explicabo
+              corrupti in voluptatem laborum, ipsum natus qui error? Suscipit.
+              Ut aliquam repudiandae minus officiis explicabo doloribus eum.
+              Aliquid, totam ab. Fugiat officia, ab quaerat labore vero illum
+              numquam error minima, sapiente ullam molestias quibusdam aliquid
+              nisi. Aut, atque sapiente.
+            </p>
+          </div>
+        </section>
+        <section class="row">
+          <div class="mb-3">
+            <form action="" class="pt-5 w-50 mx-auto rounded">
+              <label for="exampleFormControlInput1" class="form-label"
+                ><strong>Email:</strong> </label
               >
-              <textarea
+              <input
+                type="email"
                 class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <div class="mb-3 mt-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  ><strong>Message:</strong>
+                </label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
 
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3 send">
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <div class="container d-flex justify-content-center">
-      <footer class="mx-auto">
-        <i class="fa fa-copyright" aria-hidden="true"></i
-        ><span>Copyright 2020 - Luis Abellan</span>
-      </footer>
+              <div class="col-auto">
+                <button type="button" class="btn btn-outline-dark btn-lg pt-1 pb-2 mt-3 w-50 d-block mx-auto">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <div class="container-fluid d-block mx-auto m-0 p-0 w-100">
+        <footer class=" ">
+          <i class="fa fa-copyright" aria-hidden="true"></i
+          ><span>Copyright 2020 - Luis Abellan</span>
+        </footer>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"
+      ></script>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
