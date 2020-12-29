@@ -78,21 +78,31 @@ body {
         text-align: center;
         background-color: rgb(59, 56, 49);
         color: rgba(185, 178, 157, 0.986);
-        .btn-outline-dark {
-          
-          background-color: none;
-           color: rgba(185, 178, 157, 0.986);
 
+        button {
+          min-width: 10rem;
+
+          @media (min-width: 500px) {
+            min-width: 7rem;
+            min-height: 5rem;
+            max-height: 30rem;
+          }
+          @media (min-width: 700px) {
+            min-width: 30rem;
+            min-height: 5rem;
+            max-height: 30rem;
+          }
+        }
+        .btn-outline-dark {
+          background-color: none;
+          color: rgba(185, 178, 157, 0.986);
           border: 1px solid rgba(185, 178, 157, 0.986);
-          
-          
         }
         .btn-outline-dark:hover {
-          background-color: rgb(131, 100, 7);
+          background-color: $dark-sienna;
+
           color: rgb(233, 231, 227);
-          
         }
-       
       }
 
       .navbar-custom {
@@ -100,6 +110,7 @@ body {
         .navbar-brand {
           color: white !important;
         }
+
         a {
           color: white !important;
         }
@@ -126,29 +137,52 @@ body {
         color: rgb(200, 228, 236);
         font-size: 1.1rem;
       }
+      #contact {
+        background-color: rgb(59, 56, 49);
 
-      form {
-        background-color: rgb(209, 208, 140);
-        color: rgb(200, 228, 236);
-        padding: 3rem;
-        margin-top: 2rem;
+        form {
+          background-color: rgb(59, 56, 49);
+          color: rgba(185, 178, 157, 0.986);
+          padding: 3rem;
+          margin-top: 2rem;
+          border-radius: 12px;
+          min-width: 20rem;
+          max-width: 40rem;
+          min-height: 5rem;
+          max-height: 30rem;
 
-        .form-label {
-          color: $dark-sienna;
-        }
+          @media (min-width: 500px) {
+            min-width: 25rem;
+            min-height: 5rem;
+            max-height: 30rem;
+          }
+          @media (min-width: 700px) {
+            min-width: 30rem;
+            min-height: 5rem;
+            max-height: 30rem;
+          }
 
-        button:hover {
-          background-color: $dark-sienna;
-
+          .form-label {
+            color: rgba(185, 178, 157, 0.986);
+          }
+          button {
+            background-color: rgb(59, 56, 49);
+            color: rgba(185, 178, 157, 0.986);
+            min-width: 10rem;
+            max-width: 10rem;
+          }
+          button:hover {
+            background-color: $dark-sienna;
+            color: rgba(185, 178, 157, 0.986);
+          }
         }
       }
     }
     footer {
       background-color: $dark-sienna;
       color: white;
-     
+
       text-align: center;
-  
     }
   }
 }

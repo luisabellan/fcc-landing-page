@@ -17,6 +17,26 @@ body .wrapper header .cta {
   color: rgba(185, 178, 157, 0.986);
 }
 
+body .wrapper header .cta button {
+  min-width: 10rem;
+}
+
+@media (min-width: 500px) {
+  body .wrapper header .cta button {
+    min-width: 7rem;
+    min-height: 5rem;
+    max-height: 30rem;
+  }
+}
+
+@media (min-width: 700px) {
+  body .wrapper header .cta button {
+    min-width: 30rem;
+    min-height: 5rem;
+    max-height: 30rem;
+  }
+}
+
 body .wrapper header .cta .btn-outline-dark {
   background-color: none;
   color: rgba(185, 178, 157, 0.986);
@@ -24,7 +44,7 @@ body .wrapper header .cta .btn-outline-dark {
 }
 
 body .wrapper header .cta .btn-outline-dark:hover {
-  background-color: #836407;
+  background-color: #3c1518;
   color: #e9e7e3;
 }
 
@@ -64,19 +84,52 @@ body .wrapper main .second-section {
   font-size: 1.1rem;
 }
 
-body .wrapper main form {
-  background-color: #d1d08c;
-  color: #c8e4ec;
+body .wrapper main #contact {
+  background-color: #3b3831;
+}
+
+body .wrapper main #contact form {
+  background-color: #3b3831;
+  color: rgba(185, 178, 157, 0.986);
   padding: 3rem;
   margin-top: 2rem;
+  border-radius: 12px;
+  min-width: 20rem;
+  max-width: 40rem;
+  min-height: 5rem;
+  max-height: 30rem;
 }
 
-body .wrapper main form .form-label {
-  color: #3c1518;
+@media (min-width: 500px) {
+  body .wrapper main #contact form {
+    min-width: 25rem;
+    min-height: 5rem;
+    max-height: 30rem;
+  }
 }
 
-body .wrapper main form button:hover {
+@media (min-width: 700px) {
+  body .wrapper main #contact form {
+    min-width: 30rem;
+    min-height: 5rem;
+    max-height: 30rem;
+  }
+}
+
+body .wrapper main #contact form .form-label {
+  color: rgba(185, 178, 157, 0.986);
+}
+
+body .wrapper main #contact form button {
+  background-color: #3b3831;
+  color: rgba(185, 178, 157, 0.986);
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+body .wrapper main #contact form button:hover {
   background-color: #3c1518;
+  color: rgba(185, 178, 157, 0.986);
 }
 
 body .wrapper footer {
