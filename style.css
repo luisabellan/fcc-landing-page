@@ -1,16 +1,44 @@
 /* SCSS HSL */
 /* SCSS Gradient */
-.navbar-custom {
-  background-color: #67140e;
-}
-
-.navbar-custom a {
-  color: white;
-}
-
-.cta {
+body {
   margin: 0;
   padding: 0;
+}
+
+body header .navbar-custom {
+  background-color: #3c1518ff !important;
+}
+
+body header .navbar-custom .navbar-brand {
+  color: white !important;
+}
+
+body header .navbar-custom a {
+  color: white !important;
+}
+
+body header .navbar-custom span {
+  color: white !important;
+}
+
+body main {
+  margin: 0;
+  padding: 0;
+}
+
+body main .cta {
   background-color: aliceblue;
+}
+
+body main .first-section {
+  margin: 0;
+  padding: 0;
+  background-color: #f3c46d;
+}
+
+body main .second-section {
+  margin: 0;
+  padding: 0;
+  background-color: #f3c46d;
 }
 /*# sourceMappingURL=style.css.map */

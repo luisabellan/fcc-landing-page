@@ -63,14 +63,54 @@ $gradient-bottom-left: linear-gradient(
 );
 $gradient-radial: radial-gradient(#3c1518ff, #69140eff, #a44200ff, #d58936ff);
 
-.navbar-custom {
-  background-color: $blood-red;
-  a {
-    color: white;
-  }
-}
-.cta {
+body {
   margin: 0;
   padding: 0;
-  background-color: aliceblue;
+
+  header {
+    .navbar-custom {
+      background-color: #3c1518ff !important;
+        .navbar-brand {
+
+          color: white !important;
+        }
+        a  {
+
+           color: white !important;
+
+        }
+         span  {
+
+          color: white !important;
+
+        }
+      
+
+      
+    }
+
+   
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+
+     .cta {
+      background-color: aliceblue;
+    }
+
+    .first-section {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(243, 196, 109);
+    }
+
+    .second-section {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(243, 196, 109);
+    }
+  }
+
 }
