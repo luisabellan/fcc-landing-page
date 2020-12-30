@@ -74,6 +74,93 @@ body {
     padding: 0;
 
     header {
+      .navbar {
+        font-size: 14px;
+        background: #fff;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-bottom: 1px solid #d6d6d6;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      }
+      .navbar .navbar-brand {
+        color: #555;
+        padding-left: 0;
+        font-size: 20px;
+        padding-right: 50px;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+      }
+      .navbar .navbar-brand b {
+        color: #f04f01;
+      }
+      .navbar .navbar-nav a {
+        font-size: 96%;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .navbar .navbar-nav a.active {
+        color: #f04f01 !important;
+        background: transparent !important;
+      }
+      .search-box input.form-control,
+      .search-box .btn {
+        font-size: 14px;
+        border-radius: 2px !important;
+      }
+      .search-box .input-group-append {
+        padding-left: 4px;
+      }
+      .search-box input.form-control:focus {
+        border-color: #f04f01;
+        box-shadow: 0 0 8px rgba(240, 79, 1, 0.2);
+      }
+      .search-box .btn-danger,
+      .search-box .btn-danger:active {
+        font-weight: bold;
+        background: #f04f01 !important;
+        border-color: #f04f01;
+        text-transform: uppercase;
+        min-width: 90px;
+      }
+      .search-box .btn-danger:hover,
+      .search-box .btn-danger:focus {
+        background: #eb4e01 !important;
+        box-shadow: 0 0 8px rgba(240, 79, 1, 0.2);
+      }
+      .search-box .btn span {
+        transform: scale(0.9);
+        display: inline-block;
+      }
+      .navbar .nav-item.open > a {
+        background: none !important;
+      }
+      .navbar .dropdown-menu {
+        border-radius: 1px;
+        border-color: #e5e5e5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .navbar .dropdown-menu a,
+      .navbar .dropdown-menu a:active {
+        color: #777;
+        padding: 8px 20px;
+        font-size: 13px;
+        background: #fff;
+      }
+      .navbar .dropdown-menu a:hover,
+      .navbar .dropdown-menu a:focus {
+        color: #333;
+        background: #f8f9fa;
+      }
+      @media (min-width: 992px) {
+        .form-inline .input-group .form-control {
+          width: 225px;
+        }
+      }
+      @media (max-width: 992px) {
+        .form-inline {
+          display: block;
+        }
+      }
       .cta {
         text-align: center;
         background-color: rgb(59, 56, 49);
@@ -83,42 +170,24 @@ body {
           min-width: 10rem;
 
           @media (min-width: 500px) {
-            min-width: 7rem;
-            min-height: 5rem;
-            max-height: 30rem;
+            max-width: 7rem;
           }
+
           @media (min-width: 700px) {
-            min-width: 30rem;
-            min-height: 5rem;
-            max-height: 30rem;
+            max-width: 7rem;
           }
         }
+
         .btn-outline-dark {
           background-color: none;
           color: rgba(185, 178, 157, 0.986);
           border: 1px solid rgba(185, 178, 157, 0.986);
         }
+
         .btn-outline-dark:hover {
           background-color: $dark-sienna;
 
           color: rgb(233, 231, 227);
-        }
-      }
-
-      .navbar-custom {
-        background-color: #3c1518ff !important;
-        .navbar-brand {
-          color: white !important;
-        }
-
-        a {
-          color: white !important;
-        }
-        a:active {
-          color: yellow !important;
-        }
-        span {
-          color: white !important;
         }
       }
     }
@@ -137,6 +206,7 @@ body {
         color: rgb(200, 228, 236);
         font-size: 1.1rem;
       }
+
       #contact {
         background-color: rgb(59, 56, 49);
 
@@ -150,12 +220,14 @@ body {
           max-width: 40rem;
           min-height: 5rem;
           max-height: 30rem;
+          margin-bottom: 10rem;
 
           @media (min-width: 500px) {
             min-width: 25rem;
             min-height: 5rem;
             max-height: 30rem;
           }
+
           @media (min-width: 700px) {
             min-width: 30rem;
             min-height: 5rem;
@@ -165,12 +237,14 @@ body {
           .form-label {
             color: rgba(185, 178, 157, 0.986);
           }
+
           button {
             background-color: rgb(59, 56, 49);
             color: rgba(185, 178, 157, 0.986);
             min-width: 10rem;
             max-width: 10rem;
           }
+
           button:hover {
             background-color: $dark-sienna;
             color: rgba(185, 178, 157, 0.986);
@@ -178,10 +252,103 @@ body {
         }
       }
     }
-    footer {
-      background-color: $dark-sienna;
-      color: white;
+    h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel .carousel-item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
 
+    footer {
+      background-color: rgb(59, 56, 49);
+      color: white;
+      margin-top: 0rem;
       text-align: center;
     }
   }
