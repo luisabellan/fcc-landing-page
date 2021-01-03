@@ -115,7 +115,7 @@ body .wrapper header section#cta .cta .btn-outline-dark {
 }
 
 body .wrapper header section#cta .cta .btn-outline-dark:hover {
-  background-color: #3c1518;
+  background-color: rgba(9, 18, 24, 0.876);
   color: #e9e7e3;
 }
 
@@ -403,11 +403,15 @@ body .wrapper main #contact #form .form-label {
   color: rgba(185, 178, 157, 0.986);
 }
 
-body .wrapper main #contact #form input#button {
+body .wrapper main #contact #form input#submit {
   background-color: #3b3831;
   color: rgba(185, 178, 157, 0.986);
   min-width: 10rem;
   max-width: 10rem;
+}
+
+body .wrapper main #contact #form input#submit:hover {
+  background-color: rgba(9, 18, 24, 0.876);
 }
 
 body .wrapper footer {

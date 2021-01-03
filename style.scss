@@ -161,7 +161,8 @@ body {
           }
 
           .btn-outline-dark:hover {
-            background-color: $dark-sienna;
+            background-color: rgba(9, 18, 24, 0.876);
+
 
             color: rgb(233, 231, 227);
           }
@@ -385,11 +386,15 @@ body {
             color: rgba(185, 178, 157, 0.986);
           }
 
-          input#button {
+          input#submit {
             background-color: rgb(59, 56, 49);
             color: rgba(185, 178, 157, 0.986);
             min-width: 10rem;
             max-width: 10rem;
+          }
+          input#submit:hover{
+            background-color: rgba(9, 18, 24, 0.876);
+
           }
         }
       }
