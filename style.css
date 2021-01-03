@@ -410,8 +410,8 @@ body .wrapper main #contact #form input#button {
   max-width: 10rem;
 }
 
-body .wrapper main footer {
-  background-color: #3b3831;
+body .wrapper footer {
+  background-color: rgba(9, 18, 24, 0.876);
   color: white;
   margin-top: 0rem;
   text-align: center;
