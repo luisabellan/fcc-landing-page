@@ -159,6 +159,12 @@ body .wrapper main .first-section {
 
 body .wrapper main .first-section h2 {
   color: #f4f5f4;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
 }
 
 body .wrapper main .first-section div {
@@ -190,6 +196,15 @@ body .wrapper main .first-section div img {
   padding: 2rem auto;
 }
 
+body .wrapper main iframe {
+  width: 80%;
+  height: 20rem;
+  min-height: 20rem;
+  min-width: 20rem;
+  max-width: 50rem;
+  max-height: 100rem;
+}
+
 body .wrapper main .second-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +233,12 @@ body .wrapper main .second-section {
 
 body .wrapper main .second-section h2 {
   color: #f4f5f4;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
 }
 
 body .wrapper main .second-section div {
@@ -368,6 +389,7 @@ body .wrapper main #contact {
 
 body .wrapper main #contact h2 {
   color: #f4f5f4;
+  padding-left: 2rem;
 }
 
 body .wrapper main #contact #form {
