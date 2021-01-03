@@ -34,6 +34,10 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -41,7 +45,7 @@
   <body>
     <div class="wrapper">
       <header class="">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <a href="#" class="navbar-brand">Luis<b>Abellan</b></a>
           <button
             type="button"
@@ -81,22 +85,14 @@
               <a href="#" class="nav-item nav-link">Blog</a>
               <a href="#" class="nav-item nav-link">Contact</a>
             </div>
-            <form class="navbar-form form-inline ml-auto">
-              <div class="input-group search-box">
-                <input type="text" class="form-control" />
-                <div class="input-group-append">
-                  <button type="button" class="btn btn-danger">
-                    <span>Search</span>
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </nav>
-        <div class="cta p-0 pb-5 pt-5">
+        <section id="cta" class="cta p-0 pb-5 pt-5">
           <div class="row">
-            <div class="container d-block mx-auto mt-5 w-50 lead">
-              <h1 class="d-block mx-auto">Hello, world!</h1>
+            <div class="cta container d-block mx-auto mt-5 w-50 lead">
+              <h1 class="animate__animated animate__bounce d-block mx-auto">
+                Hello, world!
+              </h1>
               <p class="m-0 p-0 d-block mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
                 voluptatibus deleniti. Magni, vero laudantium. Quibusdam natus
@@ -111,14 +107,21 @@
               </button>
             </div>
           </div>
-        </div>
+        </section>
       </header>
 
       <main class="container-fluid">
-        <section id="services" class="first-section row pt-5 pb-5 pt-3">
+        <section id="services" class="first-section row pt-5 pb-5">
+          <h2>Services</h2>
           <div class="col-md">
-            <h2 class="ms-2">Services</h2>
-            <p class="pe-1 ps-1 w-100">
+            <img
+              class="animate__animated animate__fadeInRight rounded img-fluid"
+              src="./images/two.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md">
+            <p class="pe-3 ps-3 w-100">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
               repudiandae sint vero culpa necessitatibus dolores blanditiis!
@@ -132,19 +135,19 @@
               nisi. Aut, atque sapiente.
             </p>
           </div>
-
-          <div class="col-md">
-            <img class="rounded img-fluid" src="./images/one.png" alt="" />
-          </div>
         </section>
 
         <section class="second-section row pt-5 pb-5">
+          <h2>More services</h2>
           <div class="col-md">
-            <img class="rounded img-fluid" src="./images/two.png" alt="" />
+            <img
+              class="animate__animated animate__fadeInRight rounded img-fluid"
+              src="./images/two.png"
+              alt=""
+            />
           </div>
           <div class="col-md">
-            <h2>More services</h2>
-            <p class="pe-1 ps-1 w-100">
+            <p class="pe-3 ps-3 w-100">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               ipsum fugit hic dolor? Rerum eligendi optio autem repellendus
               repudiandae sint vero culpa necessitatibus dolores blanditiis!

@@ -3,6 +3,8 @@ $dark-sienna: hsla(355, 48%, 16%, 1);
 $blood-red: hsla(4, 76%, 23%, 1);
 $rust: rgb(134, 172, 175);
 $bronze: rgb(152, 193, 199);
+$white: rgb(244, 245, 244);
+$dark-blue: rgb(11, 50, 87);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(
@@ -161,55 +163,144 @@ body {
           display: block;
         }
       }
-      .cta {
-        text-align: center;
-        background-color: rgb(59, 56, 49);
-        color: rgba(185, 178, 157, 0.986);
-
-        button {
-          min-width: 10rem;
-
-          @media (min-width: 500px) {
-            max-width: 7rem;
-          }
-
-          @media (min-width: 700px) {
-            max-width: 7rem;
-          }
-        }
-
-        .btn-outline-dark {
-          background-color: none;
+      section#cta {
+        background-color: rgb(218, 224, 212);
+        background-image: url(https://picsum.photos/id/1004/1000/500?blur=1);
+        .cta {
+          text-align: center;
           color: rgba(185, 178, 157, 0.986);
-          border: 1px solid rgba(185, 178, 157, 0.986);
-        }
 
-        .btn-outline-dark:hover {
-          background-color: $dark-sienna;
+          button {
+            min-width: 10rem;
 
-          color: rgb(233, 231, 227);
+            @media (min-width: 500px) {
+              max-width: 7rem;
+            }
+
+            @media (min-width: 700px) {
+              max-width: 7rem;
+            }
+          }
+
+          .btn-outline-dark {
+            background-color: none;
+            color: rgba(185, 178, 157, 0.986);
+            border: 1px solid rgba(185, 178, 157, 0.986);
+          }
+
+          .btn-outline-dark:hover {
+            background-color: $dark-sienna;
+
+            color: rgb(233, 231, 227);
+          }
         }
       }
     }
 
     main {
-      background-color: aliceblue;
+      background-color: rgba(9, 18, 24, 0.876);
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
 
+    
       .first-section {
-        background-color: rgb(119, 149, 74);
-        color: rgb(233, 241, 236);
-        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        justify-items: center;
+        justify-self: center;
+        align-self: center;
+        @media (min-width: 800px){
+            flex-direction: row;
+
+          }
+        h2 {
+          color: $white;
+        }
+        div {
+          width:50rem;
+          display: flex;
+          flex-direction: column;
+          width: 30rem;
+
+          
+
+          p {
+            color: $white;
+            
+            font-size: 1.1rem;
+            padding: 2rem;
+            padding-top: 2rem;
+            @media (max-width: 500px) {
+            }
+          }
+        }
+
+        div {
+
+          img {
+            justify-self: center;
+            align-self: center;
+            margin: 0 auto;
+            padding: 2rem auto;
+          }
+            
+        }
+      
       }
 
       .second-section {
-        background-color: rgb(85, 57, 5);
-        color: rgb(200, 228, 236);
-        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        justify-items: center;
+        justify-self: center;
+        align-self: center;
+        @media (min-width: 800px){
+            flex-direction: row;
+
+          }
+        h2 {
+          color: $white;
+        }
+        div {
+          width:50rem;
+          display: flex;
+          flex-direction: column;
+          width: 30rem;
+
+          
+
+          p {
+            color: $white;
+            
+            font-size: 1.1rem;
+            padding: 2rem;
+            padding-top: 2rem;
+            @media (max-width: 500px) {
+            }
+          }
+        }
+
+        div {
+
+          img {
+            justify-self: center;
+            align-self: center;
+            margin: 0 auto;
+            padding: 2rem auto;
+          }
+            
+        }
+      
       }
 
       #contact {
         background-color: rgb(59, 56, 49);
-
+        h2 {
+          color: $white;
+        }
         form {
           background-color: rgb(59, 56, 49);
           color: rgba(185, 178, 157, 0.986);
@@ -250,106 +341,110 @@ body {
             color: rgba(185, 178, 157, 0.986);
           }
         }
+        
       }
-    }
-    h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
-}
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel {
-	padding: 0 70px;
-}
-.carousel .carousel-item {
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	overflow: hidden;
-	min-height: 290px;
-}
-.carousel .carousel-item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel-control-prev, .carousel-control-next {
-	width: 40px;
-	height: 40px;
-	margin-top: -20px;
-	top: 50%;
-	background: none;
-}
-.carousel-control-prev i, .carousel-control-next i {
-	font-size: 68px;
-	line-height: 42px;
-	position: absolute;
-	display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 12px;
-	height: 12px;
-	margin: 1px 3px;
-	border-radius: 50%;
-	border: none;
-}
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
+      h2 {
+        color: $dark-blue;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 60px;
+      }
+      h2::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 3px;
+        background: #8fbc54;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+      }
+      .col-center {
+        margin: 0 auto;
+        float: none !important;
+      }
+      .carousel {
+        padding: 0 70px;
+      }
+      .carousel .carousel-item {
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+      }
+      .carousel .carousel-item .img-box {
+        width: 135px;
+        height: 135px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+      }
+      .carousel .img-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+      }
+      .carousel .testimonial {
+        padding: 30px 0 10px;
+      }
+      .carousel .overview {
+        font-style: italic;
+      }
+      .carousel .overview b {
+        text-transform: uppercase;
+        color: #7aa641;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        top: 50%;
+        background: none;
+      }
+      .carousel-control-prev i,
+      .carousel-control-next i {
+        font-size: 68px;
+        line-height: 42px;
+        position: absolute;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+      }
+      .carousel-indicators {
+        bottom: -40px;
+      }
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        width: 12px;
+        height: 12px;
+        margin: 1px 3px;
+        border-radius: 50%;
+        border: none;
+      }
+      .carousel-indicators li {
+        background: #999;
+        border-color: transparent;
+        box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+      }
+      .carousel-indicators li.active {
+        background: #555;
+        box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+      }
 
-    footer {
-      background-color: rgb(59, 56, 49);
-      color: white;
-      margin-top: 0rem;
-      text-align: center;
+      footer {
+        background-color: rgb(59, 56, 49);
+        color: white;
+        margin-top: 0rem;
+        text-align: center;
+      }
     }
   }
 }
