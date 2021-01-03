@@ -44,9 +44,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-          <a href="#" class="navbar-brand">Luis<b>Abellan</b></a>
+      <header id="header">
+        <nav
+          id="nav-bar"
+          class="navbar navbar-expand-lg navbar-light fixed-top"
+        >
           <button
             type="button"
             class="navbar-toggler collapsed"
@@ -60,30 +62,12 @@
           <div
             id="navbarCollapse"
             class="navbar-collapse justify-content-start collapse"
-            style=""
           >
             <div class="navbar-nav">
-              <a href="#" class="nav-item nav-link">Home</a>
+              <a href="#"><img id="header-img" src="./images/logo.png" width="3rem" height="2rem" alt="logo" class="navbar-brand"  /></a>
               <a href="#services" class="nav-item nav-link">Services</a>
-              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#testimonials" class="nav-item nav-link">Testimonials</a>
               <a href="#contact" class="nav-item nav-link">Contact</a>
-              <div class="nav-item dropdown">
-                <a
-                  href="#"
-                  data-toggle="dropdown"
-                  class="nav-item nav-link dropdown-toggle"
-                  >Services</a
-                >
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Web Design</a>
-                  <a href="#" class="dropdown-item">Web Development</a>
-                  <a href="#" class="dropdown-item">Graphic Design</a>
-                  <a href="#" class="dropdown-item">Digital Marketing</a>
-                </div>
-              </div>
-              <a href="#" class="nav-item nav-link active">Portfolio</a>
-              <a href="#" class="nav-item nav-link">Blog</a>
-              <a href="#" class="nav-item nav-link">Contact</a>
             </div>
           </div>
         </nav>
@@ -136,6 +120,7 @@
             </p>
           </div>
         </section>
+        <iframe id="video" class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/QpR4QEv5Urk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
 
         <section class="second-section row pt-5 pb-5">
           <h2>More services</h2>
@@ -248,15 +233,20 @@
         </section>
         <section id="contact" class="row">
           <div class="mb-3">
-            <form action="" class="pt-5 w-50 mx-auto rounded">
+            <form
+              id="form"
+              action="https://www.freecodecamp.com/email-submit"
+              class="pt-5 w-50 mx-auto rounded"
+            >
               <h2>Contact us</h2>
-              <label for="exampleFormControlInput1" class="form- mt-2"
+              <label for="form" class="form- mt-2"
                 ><strong>Email:</strong>
               </label>
               <input
                 type="email"
+                name="email"
                 class="form-control mt-2"
-                id="exampleFormControlInput1"
+                id="email"
                 placeholder="name@example.com"
               />
               <div class="mb-3 mt-3">
@@ -271,12 +261,12 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="button"
+                <input
+                  id="submit"
+                  type="submit"
                   class="btn btn-outline-light btn-lg pt-1 pb-2 mt-5 w-50 d-block mx-auto"
-                >
-                  Sign up
-                </button>
+                  value="Sign up"
+                />
               </div>
             </form>
           </div>
@@ -288,17 +278,17 @@
           ><span>Copyright 2020 - Luis Abellan</span>
         </footer>
       </div>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"
-      ></script>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

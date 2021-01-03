@@ -295,7 +295,7 @@ body .wrapper main #contact h2 {
   color: #f4f5f4;
 }
 
-body .wrapper main #contact form {
+body .wrapper main #contact #form {
   background-color: #3b3831;
   color: rgba(185, 178, 157, 0.986);
   padding: 3rem;
@@ -309,7 +309,7 @@ body .wrapper main #contact form {
 }
 
 @media (min-width: 500px) {
-  body .wrapper main #contact form {
+  body .wrapper main #contact #form {
     min-width: 25rem;
     min-height: 5rem;
     max-height: 30rem;
@@ -317,25 +317,25 @@ body .wrapper main #contact form {
 }
 
 @media (min-width: 700px) {
-  body .wrapper main #contact form {
+  body .wrapper main #contact #form {
     min-width: 30rem;
     min-height: 5rem;
     max-height: 30rem;
   }
 }
 
-body .wrapper main #contact form .form-label {
+body .wrapper main #contact #form .form-label {
   color: rgba(185, 178, 157, 0.986);
 }
 
-body .wrapper main #contact form button {
+body .wrapper main #contact #form input#button {
   background-color: #3b3831;
   color: rgba(185, 178, 157, 0.986);
   min-width: 10rem;
   max-width: 10rem;
 }
 
-body .wrapper main #contact form button:hover {
+body .wrapper main #contact #form input:hover {
   background-color: #3c1518;
   color: rgba(185, 178, 157, 0.986);
 }

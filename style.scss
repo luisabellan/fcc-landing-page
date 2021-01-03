@@ -76,6 +76,7 @@ body {
     padding: 0;
 
     header {
+     
       .navbar {
         font-size: 14px;
         background: #fff;
@@ -301,7 +302,7 @@ body {
         h2 {
           color: $white;
         }
-        form {
+        #form {
           background-color: rgb(59, 56, 49);
           color: rgba(185, 178, 157, 0.986);
           padding: 3rem;
@@ -329,14 +330,14 @@ body {
             color: rgba(185, 178, 157, 0.986);
           }
 
-          button {
+          input#button {
             background-color: rgb(59, 56, 49);
             color: rgba(185, 178, 157, 0.986);
             min-width: 10rem;
             max-width: 10rem;
           }
 
-          button:hover {
+          input:hover {
             background-color: $dark-sienna;
             color: rgba(185, 178, 157, 0.986);
           }
